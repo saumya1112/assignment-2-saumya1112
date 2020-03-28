@@ -6,4 +6,5 @@ public class Traverse {
     public TreeNode getRoot() {
         return root;
     }
+
 }
