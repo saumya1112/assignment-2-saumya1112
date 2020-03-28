@@ -16,11 +16,23 @@ public class MyBinarySearchTree<E> implements BinarySearchTreeadt<E> {
 
         @Override
         public boolean add(E data) {
-                return false;
+
+                return true;
         }
 
         public TreeNode<E> getRoot() {
                 return root;
+        }
+
+        private TreeNode<E> addRecursive(TreeNode<E> currentNode, E data) {
+                if (currentNode == null) {
+                        return new TreeNode<>(data);
+                } else if ((Integer) data < (Integer) currentNode.getData()) {
+                        currentNode.setLeft(addRecursive(currentNode.getLeft(), data));
+                } else if ((Integer) data > (Integer) currentNode.getData()) {
+                        currentNode.setRight(addRecursive(currentNode.getRight(), data));
+                }
+                return currentNode;
         }
 
 
