@@ -18,4 +18,10 @@ public class MyBinarySearchTree<E> implements BinarySearchTreeadt<E> {
         public boolean add(E data) {
                 return false;
         }
+
+        public TreeNode<E> getRoot() {
+                return root;
+        }
+
+
 }
