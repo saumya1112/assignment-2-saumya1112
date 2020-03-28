@@ -40,4 +40,15 @@ public class MyCircularQueue {
             setRear(getRear().getNext());
         }
     }
+
+    public void traverseQueue() {
+        Node temp = getFront();
+
+        while (true) {
+            System.out.println(temp.getStudent());
+            temp = temp.getNext();
+            if (temp == getFront())
+                break;
+        }
+    }
 }
