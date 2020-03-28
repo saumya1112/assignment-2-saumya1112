@@ -20,6 +20,12 @@ public class MyMain {
         prePostOrder.insert(700);
         prePostOrder.insert(800);
         System.out.println("PreOrder traverse :");
+        prePostOrder.traversePreOrder(prePostOrder.getRoot());
+        System.out.println();
+        System.out.println("PostOrder traverse :");
+        prePostOrder.traversePostOrder(prePostOrder.getRoot());
+        System.out.println("\n");
+        System.out.println("Both condition are satisfied");
     }
 }
 
