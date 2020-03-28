@@ -30,5 +30,13 @@ public class Traverse {
         }
     }
 
+    void traversePostOrder(TreeNode node) {
+        if (node != null) {
+            traversePostOrder(node.getLeft());
+            traversePostOrder(node.getRight());
+            System.out.print(node.getData() + " ");
+        }
+    }
+
 
 }
