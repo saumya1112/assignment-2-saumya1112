@@ -51,4 +51,20 @@ public class MyCircularQueue {
                 break;
         }
     }
+
+    public Node deQueue() {
+        Node temp;
+        if (getFront() == null) {
+            return null;
+        } else if (getFront() == getRear()) {
+            temp = getFront();
+            setRear(null);
+            setFront(null);
+        } else {
+            temp = getFront();
+            setFront(getFront().getNext());
+            getRear().setNext(getFront());
+        }
+        return temp;
+    }
 }
