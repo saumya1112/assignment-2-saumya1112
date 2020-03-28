@@ -1,6 +1,7 @@
 package problem4.mybst;
 
-import problem1.node.TreeNode;
+
+import problem4.myqueue.TreeNode;
 
 import java.util.Queue;
 
