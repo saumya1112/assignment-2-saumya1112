@@ -9,7 +9,10 @@ package problem1.main;
 
 //import problem1.mybst.MyBinarySearchTree;
 
+import problem1.mybst.MyBinarySearchTree;
+
 public class MyMain {
+    MyBinarySearchTree<Integer> myBinarySearchTree = new MyBinarySearchTree<>();
 
 
 }
